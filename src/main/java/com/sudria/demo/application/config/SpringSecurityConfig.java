@@ -16,7 +16,9 @@ public class SpringSecurityConfig extends WebSecurityConfigurerAdapter {
     auth.inMemoryAuthentication()
         .withUser("user").password("{noop}password").roles("USER")
         .and()
-        .withUser("admin").password("{noop}password").roles("USER", "ADMIN");
+        .withUser("Alexandre").password("{noop}1234").roles("USER", "ADMIN")
+        .and()
+        .withUser("Julie").password("{noop}abcd").roles("USER", "ADMIN");
   }
 
   // Secure the endpoins with HTTP Basic authentication
