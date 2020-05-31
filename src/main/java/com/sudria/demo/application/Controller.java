@@ -20,7 +20,7 @@ import java.util.List;
 @Slf4j
 @RestController
 @RequestMapping("/api/v1")
-@Api("Apis de gestin de zoo")
+@Api("Apis de gestin de lycée")
 public class Controller {
 
   private ClassService classService;
@@ -32,7 +32,7 @@ public class Controller {
   }
 
 
-  @ApiOperation(value = "View a list of available animals", response = List.class)
+  @ApiOperation(value = "View a list of available classes", response = List.class)
   @ApiResponses(value = {
       @ApiResponse(code = 200, message = "Successfully retrieved list"),
       @ApiResponse(code = 401, message = "You are not authorized to view the resource"),
