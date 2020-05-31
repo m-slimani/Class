@@ -39,7 +39,7 @@ public class DemoApplication implements CommandLineRunner {
 
     log.info("Data initilisation...");
     saveClass(1, "3ème A", 25, "Alexa Londeau", Arrays.asList(Student.builder().age(15).name("Carole Falaise").build()));
-    saveClass(2, "6ème D", 32, "Patrick Dupont", Arrays.asList(Student.builder().age(12).name("Enzo Bounichou").build()));
+    saveClass(3, "6ème D", 32, "Patrick Dupont", Arrays.asList(Student.builder().age(12).name("Enzo Bounichou").build()));
   }
 
   @Transactional
