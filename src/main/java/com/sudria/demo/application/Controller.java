@@ -46,6 +46,7 @@ public class Controller {
   }
 
   @RequestMapping(value = "/classes/{id}", method = RequestMethod.GET)
+  @CrossOrigin(origins = "http://localhost:4200")
   public ResponseEntity<Class> getClassesById(@PathVariable(value = "id") Long id) {
     try {
       log.info("********************** inside the controller ****************************");
@@ -56,6 +57,7 @@ public class Controller {
   }
 
   @RequestMapping(value = "/classes", method = RequestMethod.POST)
+  @CrossOrigin(origins = "http://localhost:4200")
   public ResponseEntity<Class> createClasses(
       @ApiParam(value = "Class object stored in database table", required = true)
       @RequestBody Class aClass) throws NotFoundException {
@@ -73,6 +75,7 @@ public class Controller {
   }
 
   @RequestMapping(value = "/classes/{id}", method = RequestMethod.DELETE)
+  @CrossOrigin(origins = "http://localhost:4200")
   public ResponseEntity<Class> deleteClasses(@PathVariable(value = "id") Long id) {
     classService.deleteClasses(id);
     return new ResponseEntity<>(HttpStatus.OK);
