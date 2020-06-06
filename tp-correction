@@ -1,0 +1,2 @@
+En java, les noms des attributs doivent etre en camel Case : number_of_students => numberOfStudents
+Que fait la classe Supervisor.java dans le package Domain ?
